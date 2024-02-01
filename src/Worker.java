@@ -1,15 +1,15 @@
 public class Worker {
 
     protected String name;
-    protected String birthDate;
+    protected int birthYear;
     protected String endDate;
     public Worker(){
 
     }
 
-    public Worker(String name, String birthDate, String endDate) {
+    public Worker(String name, int birthYear, String endDate) {
         this.name = name;
-        this.birthDate = birthDate;
+        this.birthYear = birthYear;
         this.endDate = endDate;
     }
 
@@ -24,6 +24,6 @@ public class Worker {
     }
 
     public void terminate(String endDate){
-
+        System.out.println(endDate);
     }
 }
